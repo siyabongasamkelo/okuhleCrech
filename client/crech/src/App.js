@@ -43,7 +43,6 @@ function App() {
         <Container>
           <ThemeProvider theme={theme}>
             <ToastContainer />
-
             <RouterProvider router={router} />
           </ThemeProvider>
         </Container>
