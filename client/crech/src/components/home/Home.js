@@ -1,5 +1,4 @@
 import Header from "../header/Header";
-import { HeaderCover } from "../header/Header.styled";
 import {
   FlexBox,
   FlexBox1,
@@ -7,11 +6,13 @@ import {
   FlexBox4,
   H1,
   H3,
+  HeroSection,
   HomeCover,
   ImageContainer,
   ImageCover,
   MyButton,
   P,
+  ParagraphCover,
   TextContainer,
 } from "./Home.styled";
 import hero from "../../assets/img/hero.jpg";
@@ -22,17 +23,17 @@ const Home = () => {
   return (
     <HomeCover>
       <Header />
-      <HeaderCover>
+      <HeroSection>
         <TextContainer>
           <H1>Okuhle Creshe</H1>
           <H3>Never Worry About The Saftey Of Your Kid</H3>
-          <div style={{ width: "55%" }}>
+          <ParagraphCover>
             <P>
               We will take care of your kid all day until you come back from
               work so you can focus on your work and provide for your family
               wihout worrying about your kids...
             </P>
-          </div>
+          </ParagraphCover>
           <MyButton>Learn More</MyButton>
         </TextContainer>
         <ImageContainer>
@@ -56,7 +57,7 @@ const Home = () => {
             </FlexBox4>
           </ImageCover>
         </ImageContainer>
-      </HeaderCover>
+      </HeroSection>
     </HomeCover>
   );
 };
