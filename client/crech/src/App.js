@@ -15,7 +15,7 @@ function App() {
   const theme = {
     light: {
       primary: "#191919",
-      secondary: " #E3651D",
+      secondary: "#E3651D",
       tetiary: "#85586F",
       text: "rgba(0,0,0,0.7)",
       smallText: "rgba(225,225,225,1)",
