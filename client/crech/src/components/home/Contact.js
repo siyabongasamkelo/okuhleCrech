@@ -55,7 +55,7 @@ const Contact = () => {
         </ContactDetails>
         <ContactForm>
           <Input
-            placeholder="Enter your Email"
+            placeholder="enter email...example@gmail.com"
             id="email"
             type="email"
             onChange={(e) => {
@@ -70,7 +70,7 @@ const Contact = () => {
               setMessage(e.target.value);
             }}
           />
-          <SubmitButton>Send Button</SubmitButton>
+          <SubmitButton>Send Message</SubmitButton>
         </ContactForm>
       </ContactContainer>
     </ContactCover>
