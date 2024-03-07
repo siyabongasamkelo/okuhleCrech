@@ -5,7 +5,7 @@ export const AboutCover = styled.section`
   font-family: "Anta", sans-serif;
   font-style: normal;
   @media only screen and (max-width: 600px) {
-    margin-top: 15%;
+    margin-top: 5%;
     text-align: center;
   }
 `;
@@ -31,6 +31,7 @@ export const AboutContainer = styled.div`
     img {
       width: 90%;
       margin-left: 5%;
+      margin-top: 10%;
     }
   }
 `;
