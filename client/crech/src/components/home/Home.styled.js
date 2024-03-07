@@ -86,6 +86,7 @@ export const FlexBox = styled.div`
     }
   }
 `;
+
 export const FlexBox1 = styled.div`
   display: flex;
   justify-content: space-between;
