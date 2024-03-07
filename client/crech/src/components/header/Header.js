@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <HeaderCover>
       <Logo forMobile={false}>
-        <h3>Logo</h3>
+        <h3>Siphosakhe</h3>
         <List className="mobileSvg" />
       </Logo>
       <Links>
@@ -27,9 +27,9 @@ const Header = () => {
           <h3 className="mobileLogo">Logo</h3>
         </Logo>
         <Link to={"/"}>Home</Link>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/"}>Home</Link>
+        <Link to={"/"}>About Us</Link>
+        <Link to={"/"}>Our Services</Link>
+        <Link to={"/"}>Contact Us</Link>
       </Links>
       <SocialMediaIcons>
         <Icons>
