@@ -3,11 +3,13 @@ import { ParagraphCover } from "./Home.styled";
 
 export const ServicesCardCover = styled.div`
   height: 30vh;
-  width: 30%;
-  margin-top: 5%;
-  @media only screen and (max-width: 600px) {
-    width: 90%;
-    text-align: center;
+  width: 90%;
+  text-align: center;
+  @media only screen and (min-width: 992px) {
+    height: 30vh;
+    width: 30%;
+    text-align: left;
+    margin-top: 5%;
   }
 `;
 
@@ -23,13 +25,26 @@ export const CardImage = styled.div`
     width: 45%;
     object-fit: cover;
   }
+  @media only screen and (min-width: 768px) {
+    img {
+      height: 50%;
+      width: 25%;
+      object-fit: cover;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    img {
+      height: 50%;
+      width: 35%;
+    }
+  }
 `;
 
 export const CardParaCover = styled(ParagraphCover)`
-  margin-left: 24%;
-  margin-top: -5%;
+  /* margin-top: -5%; */
   text-align: center;
-  @media only screen and (max-width: 600px) {
-    margin-left: 15%;
+  margin-left: 15%;
+  @media only screen and (min-width: 992px) {
+    margin-left: 24%;
   }
 `;
