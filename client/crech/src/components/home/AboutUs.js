@@ -6,7 +6,7 @@ import about3 from "../../assets/img/about3.jpg";
 
 const AboutUs = () => {
   return (
-    <AboutCover>
+    <AboutCover id="aboutus">
       <H3>About Us</H3>
       <AboutParaCover>
         <P>
