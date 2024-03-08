@@ -40,7 +40,6 @@ export const ContactForm = styled.form`
   width: 90%;
   margin-top: 10%;
   margin-left: 5%;
-
   @media only screen and (min-width: 992px) {
     width: 60%;
     margin-top: 0;
@@ -55,7 +54,6 @@ export const Input = styled.input`
   margin-left: 0;
   @media only screen and (min-width: 992px) {
     width: 60%;
-
     margin-left: 40%;
   }
 `;
@@ -74,21 +72,21 @@ export const TextArea = styled.textarea`
 `;
 
 export const SubmitButton = styled.button`
+  width: 100%;
+  margin-left: 0;
   height: 40px;
-  width: 60%;
   background-color: ${({ theme }) => theme.light.secondary};
   color: white;
   border: none;
   font-size: 16px;
-  margin-left: 40%;
   margin-top: 3%;
   cursor: pointer;
   transition: 0.5s ease-in-out;
   &:hover {
     background-color: rgba(227, 101, 29, 0.5);
   }
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    margin-left: 0;
+  @media only screen and (min-width: 992px) {
+    margin-left: 40%;
+    width: 60%;
   }
 `;
