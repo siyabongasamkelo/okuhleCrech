@@ -13,8 +13,9 @@ export const FooterData = styled.div`
   align-items: center;
   font-family: "Anta", sans-serif;
   font-style: normal;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
+  flex-direction: column;
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
   }
 `;
 
@@ -32,38 +33,41 @@ export const FooterCopyright = styled.div`
 `;
 
 export const ContactDetails = styled.div`
-  width: 30%;
-  display: flex;
-  flex-direction: column;
+  width: 90%;
   p {
-    line-height: 0px;
+    padding-top: 0%;
   }
-  @media only screen and (max-width: 600px) {
-    width: 90%;
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+    flex-direction: row;
+    p {
+      line-height: 0px;
+      padding-top: 3%;
+    }
   }
 `;
 
 export const Links = styled.div`
-  width: 30%;
-  display: flex;
-  flex-direction: column;
   a {
     display: block;
     text-decoration: none;
     color: ${({ theme }) => theme.light.smallText};
     text-align: left;
   }
-  @media only screen and (max-width: 600px) {
-    width: 90%;
+  width: 90%;
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
 export const Subscribe = styled.div`
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  @media only screen and (max-width: 600px) {
-    width: 90%;
+  width: 90%;
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
