@@ -5,7 +5,7 @@ import {
   Logo,
   SocialMediaIcons,
 } from "./Header.styled";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import {
   Facebook,
   Whatsapp,
@@ -14,22 +14,40 @@ import {
   Youtube,
   List,
 } from "react-bootstrap-icons";
-
+import { useState } from "react";
+import HeaderSlider from "./HeaderSlider";
 const Header = () => {
+  const [closeMenu, setCloseMenu] = useState(true);
+  const [display, setDisplay] = useState("block");
+
   return (
     <HeaderCover>
       <Logo forMobile={false}>
         <h3>Siphosakhe</h3>
-        <List className="mobileSvg" />
+        <List
+          className="mobileSvg"
+          onClick={() => {
+            closeMenu ? setDisplay("none") : setDisplay("block");
+            setCloseMenu(false);
+          }}
+        />
       </Logo>
       <Links>
         <Logo forMobile={true}>
           <h3 className="mobileLogo">Logo</h3>
         </Logo>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/"}>About Us</Link>
-        <Link to={"/"}>Our Services</Link>
-        <Link to={"/"}>Contact Us</Link>
+        <Link smooth to={"/#home"}>
+          Home
+        </Link>
+        <Link smooth to="/#aboutus">
+          About Us
+        </Link>
+        <Link smooth to={"/#ourservices"}>
+          Our Services
+        </Link>
+        <Link smooth to={"/#contactus"}>
+          Contact Us
+        </Link>
       </Links>
       <SocialMediaIcons>
         <Icons>
@@ -40,6 +58,13 @@ const Header = () => {
           <Youtube />
         </Icons>
       </SocialMediaIcons>
+      <HeaderSlider
+        setCloseMenu={() => {
+          setCloseMenu(true);
+        }}
+        closeMenu={closeMenu}
+        display={display}
+      ></HeaderSlider>
     </HeaderCover>
   );
 };
