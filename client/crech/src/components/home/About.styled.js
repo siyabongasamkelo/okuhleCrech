@@ -4,34 +4,37 @@ import { ParagraphCover } from "./Home.styled";
 export const AboutCover = styled.section`
   font-family: "Anta", sans-serif;
   font-style: normal;
-  @media only screen and (max-width: 600px) {
-    margin-top: 5%;
-    text-align: center;
+  margin-top: 5%;
+  text-align: center;
+
+  @media only screen and (min-width: 992px) {
+    text-align: left;
   }
 `;
 
 export const AboutParaCover = styled(ParagraphCover)`
-  width: 40%;
-  @media only screen and (max-width: 600px) {
-    width: 80%;
+  width: 80%;
+  @media only screen and (min-width: 992px) {
+    width: 40%;
   }
 `;
 
 export const AboutContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   img {
-    height: 30vh;
-    width: 30%;
-    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
     object-fit: cover;
   }
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-between;
     img {
-      width: 90%;
-      margin-left: 5%;
-      margin-top: 10%;
+      height: 30vh;
+      width: 30%;
+      margin-top: 5%;
     }
   }
 `;
