@@ -21,7 +21,7 @@ import hero3 from "../../assets/img/hero3.jpg";
 
 const Home = () => {
   return (
-    <HomeCover>
+    <HomeCover id="home">
       <Header />
       <HeroSection>
         <TextContainer>

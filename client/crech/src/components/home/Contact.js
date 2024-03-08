@@ -24,7 +24,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   return (
-    <ContactCover>
+    <ContactCover id="contactus">
       <H3>Contact Us</H3>
       <AboutParaCover>
         <P>We are here to help</P>

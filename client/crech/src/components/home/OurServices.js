@@ -8,7 +8,7 @@ import ramen from "../../assets/img/ramen.png";
 
 const OurServices = () => {
   return (
-    <OurServicesCover>
+    <OurServicesCover id="ourservices">
       <H3>Our Services</H3>
       <AboutParaCover>
         <P>These are all the services we offer to our clients</P>
