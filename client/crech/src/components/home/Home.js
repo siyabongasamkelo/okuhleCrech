@@ -18,6 +18,7 @@ import {
 import hero from "../../assets/img/hero.jpg";
 import hero2 from "../../assets/img/hero2.jpg";
 import hero3 from "../../assets/img/hero3.jpg";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -34,7 +35,9 @@ const Home = () => {
               wihout worrying about your kids...
             </P>
           </ParagraphCover>
-          <MyButton>Learn More</MyButton>
+          <Link smooth to={"/#contactus"}>
+            <MyButton>Learn More</MyButton>
+          </Link>
         </TextContainer>
         <ImageContainer>
           <ImageCover>

@@ -34,7 +34,7 @@ const Header = () => {
       </Logo>
       <Links>
         <Logo forMobile={true}>
-          <h3 className="mobileLogo">Logo</h3>
+          <h3 className="mobileLogo">Siphosakhe</h3>
         </Logo>
         <Link smooth to={"/#home"}>
           Home
